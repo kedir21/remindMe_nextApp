@@ -33,3 +33,13 @@ model Task {
   collectionId Int
   Collection   Collection @relation(fields: [collectionId], references: [id], onDelete: Cascade)
 }
+
+// model Arsoader {
+//    id        Int      @id @default(autoincrement())
+//   name      String
+//   userId    String
+//   color     String
+//   createdAt DateTime @default(now())
+
+//   @@unique([name, userId]) 
+// }
